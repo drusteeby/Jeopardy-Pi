@@ -1,32 +1,29 @@
 ﻿using HtmlAgilityPack;
 using Jeopardy.DataRepository;
-using Jeopardy.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Jeopardy.Utilities
 {
-    public static class GameParser
+    public static class EpisodeParser
     {
         static string SHOWIDREGEX = @"Show #(\d\d?\d?\d?)";
         static string AIRDATEREGEX = @"\d{4}-\d{1,2}-\d{1,2}";
 
-        public static JeopardyEpisode GetGameFromJarchiveHTML(string html)
+        public static JeopardyEpisode ParseEpisodeFromJarchiveHTML(string html)
         {
             JeopardyEpisode game = new JeopardyEpisode();
 
-            var doc = new HtmlDocument();            
+            var doc = new HtmlDocument();
             doc.LoadHtml(html);
 
             //Get the Airdate from the title
             //The title is in the format: `J!Archive - Show #XXXX, aired 2004-09-16
             var titleNode = doc.DocumentNode.SelectSingleNode("//head/title");
 
-            game.AirDate = GetAirDateFromTitleString(titleNode.InnerText);
+            string titleText = titleNode.InnerText;
+            game.AirDate = GetAirDateFromTitleString(titleText);
+            game.ShowID = GetShowIDFromTitleString(titleText);
 
             return game;
         }

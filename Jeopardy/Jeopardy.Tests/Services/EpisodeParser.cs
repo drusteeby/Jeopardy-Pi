@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Jeopardy.Utilities;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
-namespace Jeopardy.Tests
+namespace Jeopardy.Tests.Services
 {
     [TestClass]
     public class GameParserTests
     {
+
         string GetHTMLTitle(int showNum, DateTime date)
         {
             return $@"
@@ -25,7 +24,7 @@ namespace Jeopardy.Tests
                 DateTime startDate = new DateTime(year: 1986, month: 1, day: 1);
                 string html = GetHTMLTitle(i, startDate.AddDays(i));
 
-                var date = GameParser.GetAirDateFromTitleString(html);
+                var date = EpisodeParser.GetAirDateFromTitleString(html);
 
                 Assert.IsNotNull(date);
             }
@@ -34,7 +33,7 @@ namespace Jeopardy.Tests
         [TestMethod]
         public void GetAirDateFromTitleStringThrowsExceptionWhenCannotParse()
         {
-            Assert.ThrowsException<Exception>(() => GameParser.GetAirDateFromTitleString(""));
+            Assert.ThrowsException<Exception>(() => EpisodeParser.GetAirDateFromTitleString(""));
         }
 
         [TestMethod]
@@ -45,7 +44,7 @@ namespace Jeopardy.Tests
                 DateTime startDate = new DateTime(year: 1986, month: 1, day: 1);
                 string html = GetHTMLTitle(i, startDate.AddDays(i));
 
-                var date = GameParser.GetAirDateFromTitleString(html);
+                var date = EpisodeParser.GetAirDateFromTitleString(html);
 
                 Assert.IsNotNull(date);
             }
@@ -54,6 +53,7 @@ namespace Jeopardy.Tests
         [TestMethod]
         public void GetShowIDFromTitleStringThrowsExceptionWhenCannotParse()
         {
-            Assert.ThrowsException<Exception>(() => GameParser.GetAirDateFromTitleString(""));
+            Assert.ThrowsException<Exception>(() => EpisodeParser.GetAirDateFromTitleString(""));
         }
     }
+}
