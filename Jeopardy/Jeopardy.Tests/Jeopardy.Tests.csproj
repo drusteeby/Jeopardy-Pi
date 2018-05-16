@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\EpisodeParser.cs" />
+    <Compile Include="Services\JArchiveEpisodeParser.cs" />
     <Compile Include="UnitTestApp.xaml.cs">
       <DependentUpon>UnitTestApp.xaml</DependentUpon>
     </Compile>
@@ -114,6 +114,107 @@
     <None Include="Jeopardy.Tests_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="HtmlFiles\1.html" />
+    <EmbeddedResource Include="HtmlFiles\5965.html" />
+    <EmbeddedResource Include="HtmlFiles\10.html" />
+    <EmbeddedResource Include="HtmlFiles\100.html" />
+    <EmbeddedResource Include="HtmlFiles\11.html" />
+    <EmbeddedResource Include="HtmlFiles\12.html" />
+    <EmbeddedResource Include="HtmlFiles\13.html" />
+    <EmbeddedResource Include="HtmlFiles\14.html" />
+    <EmbeddedResource Include="HtmlFiles\15.html" />
+    <EmbeddedResource Include="HtmlFiles\16.html" />
+    <EmbeddedResource Include="HtmlFiles\17.html" />
+    <EmbeddedResource Include="HtmlFiles\18.html" />
+    <EmbeddedResource Include="HtmlFiles\19.html" />
+    <EmbeddedResource Include="HtmlFiles\2.html" />
+    <EmbeddedResource Include="HtmlFiles\20.html" />
+    <EmbeddedResource Include="HtmlFiles\21.html" />
+    <EmbeddedResource Include="HtmlFiles\22.html" />
+    <EmbeddedResource Include="HtmlFiles\23.html" />
+    <EmbeddedResource Include="HtmlFiles\24.html" />
+    <EmbeddedResource Include="HtmlFiles\25.html" />
+    <EmbeddedResource Include="HtmlFiles\26.html" />
+    <EmbeddedResource Include="HtmlFiles\27.html" />
+    <EmbeddedResource Include="HtmlFiles\28.html" />
+    <EmbeddedResource Include="HtmlFiles\29.html" />
+    <EmbeddedResource Include="HtmlFiles\3.html" />
+    <EmbeddedResource Include="HtmlFiles\30.html" />
+    <EmbeddedResource Include="HtmlFiles\31.html" />
+    <EmbeddedResource Include="HtmlFiles\32.html" />
+    <EmbeddedResource Include="HtmlFiles\33.html" />
+    <EmbeddedResource Include="HtmlFiles\34.html" />
+    <EmbeddedResource Include="HtmlFiles\35.html" />
+    <EmbeddedResource Include="HtmlFiles\36.html" />
+    <EmbeddedResource Include="HtmlFiles\37.html" />
+    <EmbeddedResource Include="HtmlFiles\38.html" />
+    <EmbeddedResource Include="HtmlFiles\39.html" />
+    <EmbeddedResource Include="HtmlFiles\4.html" />
+    <EmbeddedResource Include="HtmlFiles\40.html" />
+    <EmbeddedResource Include="HtmlFiles\41.html" />
+    <EmbeddedResource Include="HtmlFiles\42.html" />
+    <EmbeddedResource Include="HtmlFiles\43.html" />
+    <EmbeddedResource Include="HtmlFiles\44.html" />
+    <EmbeddedResource Include="HtmlFiles\45.html" />
+    <EmbeddedResource Include="HtmlFiles\46.html" />
+    <EmbeddedResource Include="HtmlFiles\47.html" />
+    <EmbeddedResource Include="HtmlFiles\48.html" />
+    <EmbeddedResource Include="HtmlFiles\49.html" />
+    <EmbeddedResource Include="HtmlFiles\5.html" />
+    <EmbeddedResource Include="HtmlFiles\50.html" />
+    <EmbeddedResource Include="HtmlFiles\51.html" />
+    <EmbeddedResource Include="HtmlFiles\52.html" />
+    <EmbeddedResource Include="HtmlFiles\53.html" />
+    <EmbeddedResource Include="HtmlFiles\54.html" />
+    <EmbeddedResource Include="HtmlFiles\55.html" />
+    <EmbeddedResource Include="HtmlFiles\56.html" />
+    <EmbeddedResource Include="HtmlFiles\57.html" />
+    <EmbeddedResource Include="HtmlFiles\58.html" />
+    <EmbeddedResource Include="HtmlFiles\59.html" />
+    <EmbeddedResource Include="HtmlFiles\6.html" />
+    <EmbeddedResource Include="HtmlFiles\60.html" />
+    <EmbeddedResource Include="HtmlFiles\61.html" />
+    <EmbeddedResource Include="HtmlFiles\62.html" />
+    <EmbeddedResource Include="HtmlFiles\63.html" />
+    <EmbeddedResource Include="HtmlFiles\64.html" />
+    <EmbeddedResource Include="HtmlFiles\65.html" />
+    <EmbeddedResource Include="HtmlFiles\66.html" />
+    <EmbeddedResource Include="HtmlFiles\67.html" />
+    <EmbeddedResource Include="HtmlFiles\68.html" />
+    <EmbeddedResource Include="HtmlFiles\69.html" />
+    <EmbeddedResource Include="HtmlFiles\7.html" />
+    <EmbeddedResource Include="HtmlFiles\70.html" />
+    <EmbeddedResource Include="HtmlFiles\71.html" />
+    <EmbeddedResource Include="HtmlFiles\72.html" />
+    <EmbeddedResource Include="HtmlFiles\73.html" />
+    <EmbeddedResource Include="HtmlFiles\74.html" />
+    <EmbeddedResource Include="HtmlFiles\75.html" />
+    <EmbeddedResource Include="HtmlFiles\76.html" />
+    <EmbeddedResource Include="HtmlFiles\77.html" />
+    <EmbeddedResource Include="HtmlFiles\78.html" />
+    <EmbeddedResource Include="HtmlFiles\79.html" />
+    <EmbeddedResource Include="HtmlFiles\8.html" />
+    <EmbeddedResource Include="HtmlFiles\80.html" />
+    <EmbeddedResource Include="HtmlFiles\81.html" />
+    <EmbeddedResource Include="HtmlFiles\82.html" />
+    <EmbeddedResource Include="HtmlFiles\83.html" />
+    <EmbeddedResource Include="HtmlFiles\84.html" />
+    <EmbeddedResource Include="HtmlFiles\85.html" />
+    <EmbeddedResource Include="HtmlFiles\86.html" />
+    <EmbeddedResource Include="HtmlFiles\87.html" />
+    <EmbeddedResource Include="HtmlFiles\88.html" />
+    <EmbeddedResource Include="HtmlFiles\89.html" />
+    <EmbeddedResource Include="HtmlFiles\9.html" />
+    <EmbeddedResource Include="HtmlFiles\90.html" />
+    <EmbeddedResource Include="HtmlFiles\91.html" />
+    <EmbeddedResource Include="HtmlFiles\92.html" />
+    <EmbeddedResource Include="HtmlFiles\93.html" />
+    <EmbeddedResource Include="HtmlFiles\94.html" />
+    <EmbeddedResource Include="HtmlFiles\95.html" />
+    <EmbeddedResource Include="HtmlFiles\96.html" />
+    <EmbeddedResource Include="HtmlFiles\97.html" />
+    <EmbeddedResource Include="HtmlFiles\98.html" />
+    <EmbeddedResource Include="HtmlFiles\99.html" />
     <Content Include="Properties\UnitTestApp.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -135,10 +236,21 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Jeopardy.DataRepository\Jeopardy.DataAccess.csproj">
+      <Project>{5730D8DC-4659-46BB-A407-A25C420CD956}</Project>
+      <Name>Jeopardy.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Jeopardy.Model\Jeopardy.Model.csproj">
+      <Project>{0BFCB26F-79C9-42F5-BA54-316304892DD2}</Project>
+      <Name>Jeopardy.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Jeopardy.Utilities\Jeopardy.Services.csproj">
       <Project>{C42EBD5B-275A-4285-AA01-9F58CEAF0622}</Project>
       <Name>Jeopardy.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

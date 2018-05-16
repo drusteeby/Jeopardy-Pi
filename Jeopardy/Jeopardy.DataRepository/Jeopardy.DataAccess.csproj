@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="HTMLFiles\1.html" />
+    <None Remove="HTMLFiles\10.html" />
+    <None Remove="HTMLFiles\100.html" />
+    <None Remove="HTMLFiles\1000.html" />
+    <None Remove="HTMLFiles\1001.html" />
+    <None Remove="HTMLFiles\1002.html" />
+    <None Remove="HTMLFiles\1003.html" />
+    <None Remove="HTMLFiles\1004.html" />
+    <None Remove="HTMLFiles\1005.html" />
+    <None Remove="HTMLFiles\1006.html" />
+    <None Remove="HTMLFiles\1007.html" />
+    <None Remove="HTMLFiles\1008.html" />
+    <None Remove="HTMLFiles\1009.html" />
+    <None Remove="HTMLFiles\101.html" />
+    <None Remove="HTMLFiles\1010.html" />
+    <None Remove="HTMLFiles\1011.html" />
+    <None Remove="HTMLFiles\1012.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="HTMLFiles\1.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\10.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\100.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1000.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1001.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1002.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1003.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1004.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1005.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1006.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1007.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1008.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1009.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\101.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1010.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1011.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLFiles\1012.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.108" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jeopardy.Model\Jeopardy.Model.csproj" />
+  </ItemGroup>
+
+</Project>

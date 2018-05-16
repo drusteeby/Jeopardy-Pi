@@ -98,9 +98,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Clue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities\GameParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -143,14 +141,17 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jeopardy.DataRepository\Jeopardy.DataRepository.csproj">
+    <ProjectReference Include="..\Jeopardy.DataRepository\Jeopardy.DataAccess.csproj">
       <Project>{5730d8dc-4659-46bb-a407-a25c420cd956}</Project>
-      <Name>Jeopardy.DataRepository</Name>
+      <Name>Jeopardy.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\Jeopardy.Utilities\Jeopardy.Services.csproj">
       <Project>{c42ebd5b-275a-4285-aa01-9f58ceaf0622}</Project>
       <Name>Jeopardy.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

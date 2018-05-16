@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeopardy", "Jeopardy\Jeopar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeopardy.Services", "Jeopardy.Utilities\Jeopardy.Services.csproj", "{C42EBD5B-275A-4285-AA01-9F58CEAF0622}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeopardy.DataRepository", "Jeopardy.DataRepository\Jeopardy.DataRepository.csproj", "{5730D8DC-4659-46BB-A407-A25C420CD956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeopardy.DataAccess", "Jeopardy.DataRepository\Jeopardy.DataAccess.csproj", "{5730D8DC-4659-46BB-A407-A25C420CD956}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeopardy.Tests", "Jeopardy.Tests\Jeopardy.Tests.csproj", "{354A36CF-6844-4C51-A5AB-18FC0EF2E4E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeopardy.Model", "Jeopardy.Model\Jeopardy.Model.csproj", "{0BFCB26F-79C9-42F5-BA54-316304892DD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,22 @@ Global
 		{354A36CF-6844-4C51-A5AB-18FC0EF2E4E3}.Release|x86.ActiveCfg = Release|x86
 		{354A36CF-6844-4C51-A5AB-18FC0EF2E4E3}.Release|x86.Build.0 = Release|x86
 		{354A36CF-6844-4C51-A5AB-18FC0EF2E4E3}.Release|x86.Deploy.0 = Release|x86
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Debug|x64.Build.0 = Debug|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Debug|x86.Build.0 = Debug|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Release|ARM.Build.0 = Release|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Release|x64.ActiveCfg = Release|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Release|x64.Build.0 = Release|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Release|x86.ActiveCfg = Release|Any CPU
+		{0BFCB26F-79C9-42F5-BA54-316304892DD2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
